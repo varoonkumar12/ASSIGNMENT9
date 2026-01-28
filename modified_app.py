@@ -1,11 +1,11 @@
 import streamlit as st
-from etl.extract import extract_weather_data
-from etl.transform import (
+from extract import extract_weather_data
+from transform import (
     transform_current_weather,
     transform_forecast_weather
 )
 from datetime import datetime
-from analysis.temperature_analysis import (
+from temperature_analysis import (
     plot_current_and_forecast_temp,
     plot_daily_avg_temperature,
     plot_humidity_trend, 
@@ -103,4 +103,5 @@ st.markdown(
     </p>
     """,
     unsafe_allow_html=True
+
 )
