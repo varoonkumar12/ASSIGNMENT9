@@ -3,3 +3,4 @@ matplotlib
 streamlit
 requests
 altair==4.2.2
+standard-imghdr
